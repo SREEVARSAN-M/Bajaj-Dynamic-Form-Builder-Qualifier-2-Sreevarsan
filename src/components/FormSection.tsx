@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FormField, FormSection } from '../types/formTypes';
-import '../styles/FormStyles.css';
+
 
 interface FormSectionComponentProps {
   sections: FormSection[];
@@ -157,23 +157,23 @@ const FormSectionComponent: React.FC<FormSectionComponentProps> = ({ sections })
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h3>{currentSection.title}</h3>
       <p>{currentSection.description}</p>
 
       {currentSection.fields.map((field) => (
-        <div key={field.fieldId} style={{ marginBottom: '15px' }}>
+        <div key={field.fieldId} className="form-field">
           <label>{field.label}</label>
           {renderField(field)}
           {errors[field.fieldId] && (
-            <div style={{ color: 'red', fontSize: '12px' }}>{errors[field.fieldId]}</div>
+            <div className="error-text">{errors[field.fieldId]}</div>
           )}
         </div>
       ))}
 
-      <div style={{ marginTop: '20px' }}>
+      <div className="button-group">
         {currentSectionIndex > 0 && (
-          <button onClick={handlePrev} style={{ marginRight: '10px' }}>
+          <button onClick={handlePrev}>
             Prev
           </button>
         )}

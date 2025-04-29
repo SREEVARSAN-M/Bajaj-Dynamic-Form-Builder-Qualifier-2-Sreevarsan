@@ -3,6 +3,7 @@ import { getForm } from '../utils/api';
 import { FormResponse, FormSection } from '../types/formTypes';
 import FormSectionComponent from './FormSection';
 
+
 interface FormPageProps {
   rollNumber: string;
 }
@@ -25,7 +26,7 @@ const FormPage: React.FC<FormPageProps> = ({ rollNumber }) => {
   if (!formData) return <div>Loading form...</div>;
 
   return (
-    <div>
+    <div className="form-container">
       <h2>{formData.form.formTitle}</h2>
       <FormSectionComponent sections={formData.form.sections} />
     </div>
@@ -33,8 +34,3 @@ const FormPage: React.FC<FormPageProps> = ({ rollNumber }) => {
 };
 
 export default FormPage;
-
-
-
-
-

@@ -22,24 +22,26 @@ const Login = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Student Login</h2>
-      <input
-        type="text"
-        placeholder="Roll Number"
-        value={rollNumber}
-        onChange={(e) => setRollNumber(e.target.value)}
-        required
-      />
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        required
-      />
-      <button type="submit">Login</button>
-    </form>
+    <div className="login-container">
+      <form onSubmit={handleSubmit}>
+        <h2>Student Login</h2>
+        <input
+          type="text"
+          placeholder="Roll Number"
+          value={rollNumber}
+          onChange={(e) => setRollNumber(e.target.value)}
+          required
+        />
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
   );
 };
 
