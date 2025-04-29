@@ -39,7 +39,9 @@ const Login = () => {
           onChange={(e) => setName(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <div style={{ textAlign: 'center' }}>
+          <button type="submit">Login</button>
+        </div>
       </form>
     </div>
   );
