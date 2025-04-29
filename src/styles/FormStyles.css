@@ -1,4 +1,3 @@
-/* Body background */
 body {
   background-color: #eef1f5;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +5,6 @@ body {
   padding: 0;
 }
 
-/* Form container */
 .form-container {
   max-width: 700px;
   margin: 60px auto;
@@ -17,7 +15,6 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-/* Login container (separate style for login page) */
 .login-container {
   max-width: 400px;
   margin: 100px auto;
@@ -68,7 +65,6 @@ body {
   color: #2c3e50;
 }
 
-/* Section heading */
 h2, h3 {
   color: #2c3e50;
   margin-bottom: 30px;
@@ -77,7 +73,6 @@ h2, h3 {
   text-align: center;
 }
 
-/* Form fields */
 .form-field {
   margin-bottom: 25px;
   display: flex;
@@ -85,14 +80,12 @@ h2, h3 {
   align-items: flex-start;
 }
 
-/* Labels */
 .form-field label {
   font-size: 16px;
   color: #444;
   margin-bottom: 8px;
 }
 
-/* Inputs, Selects, Textareas */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -116,7 +109,6 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
 }
 
-/* Radio button field group */
 .radio-group {
   display: flex;
   flex-direction: column;
@@ -134,7 +126,6 @@ textarea:focus {
   margin-right: 10px;
 }
 
-/* Buttons */
 .button-group {
   display: flex;
   justify-content: flex-end;
@@ -158,7 +149,6 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Error text */
 .error-text {
   color: #e74c3c;
   font-size: 13px;
